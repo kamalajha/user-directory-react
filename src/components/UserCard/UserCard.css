@@ -1,0 +1,74 @@
+.card {
+  padding: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.08),
+      0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+      0 8px 20px rgba(0, 0, 0, 0.12),
+      0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Name */
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+/* Info Lines */
+.email,
+.company {
+  margin: 4px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+/* Sliding Details Section */
+.details-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  background: #f3f4f6;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  border-left: 4px solid #3b82f6;
+}
+
+.details-wrapper.open {
+  max-height: 300px;
+  padding: 15px;
+}
+
+.details-wrapper p {
+  margin: 6px 0;
+  font-size: 14.5px;
+}
+
+/* Button */
+.details-btn {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+.details-btn:hover {
+  background: #1e4ed8;
+}
